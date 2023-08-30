@@ -12,6 +12,8 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "@tweenjs/tween.js": "^21.0.0",
+    "gsap": "^3.12.2",
     "three": "^0.153.0"
   }
 }

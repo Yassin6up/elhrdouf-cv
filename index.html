@@ -2,24 +2,251 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./libs/animate.css">
+    <script src="https://kit.fontawesome.com/e85afcd4d3.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="nav">
-    <button class="button-87" id="musicButton" ><svg width="32" height="32" viewBox="0 0 24 24" stroke="white" fill="none" stroke-linejoin="round" stroke-width="1.125" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg"><path d="M20 16V12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12V16M6 19.5C4.89543 19.5 4 18.6046 4 17.5V15.5C4 14.3954 4.89543 13.5 6 13.5C6.55228 13.5 7 13.9477 7 14.5V18.5C7 19.0523 6.55228 19.5 6 19.5ZM18 19.5C17.4477 19.5 17 19.0523 17 18.5V14.5C17 13.9477 17.4477 13.5 18 13.5C19.1046 13.5 20 14.3954 20 15.5V17.5C20 18.6046 19.1046 19.5 18 19.5Z"></path></svg></button>
-    <audio class="audio" style="display: none;">
-      <source src="./musics/lofi-study-112191.mp3" type="audio/mp3">
+    <audio class="audio" style="display: none">
+      <source src="./musics/lofi-study-112191.mp3" type="audio/mp3" />
     </audio>
-    <audio class="audio" style="display: none;">
-      <source src="./musics/fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.mp3" type="audio/mp3">
+    <audio class="audio" style="display: none">
+      <source
+        src="./musics/fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.mp3"
+        type="audio/mp3" />
     </audio>
-  </div>
-    <div class="pointer" id="dot">
+    <audio  id="clickSound" style="display: none">
+      <source src="./musics/clickSound.wav" type="audio/mp3" />
+    </audio>
 
+    <div class="pointer" id="dot"></div>
+
+    <div class="nav">
+      <button class="button-87" id="musicButton">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          stroke="white"
+          fill="none"
+          stroke-linejoin="round"
+          stroke-width="1.125"
+          stroke-linecap="round"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20 16V12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12V16M6 19.5C4.89543 19.5 4 18.6046 4 17.5V15.5C4 14.3954 4.89543 13.5 6 13.5C6.55228 13.5 7 13.9477 7 14.5V18.5C7 19.0523 6.55228 19.5 6 19.5ZM18 19.5C17.4477 19.5 17 19.0523 17 18.5V14.5C17 13.9477 17.4477 13.5 18 13.5C19.1046 13.5 20 14.3954 20 15.5V17.5C20 18.6046 19.1046 19.5 18 19.5Z"></path>
+        </svg>
+      </button>
     </div>
-    <script src="./show.js"></script>
+
+    <main style="width:100%">
+      <section class="fristPage">
+        <h1 class="title">Yassine Elhrdouf</h1>
+        <p class="subtitle">Full Stack Developer</p>
+        
+      </section>
+      <section class="about " id="about">
+        <canvas id="bg" class="wow slideInLeft" data-wow-duration="3s"></canvas>
+
+        <div class="text wow slideInRight"  data-wow-duration="3s">
+          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">about()</span></h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab laborum
+            placeat voluptatum commodi odio eaque odit. Aliquam eveniet nulla
+            maxime eum adipisci, numquam officiis iusto porro, culpa accusamus
+            dolor odit!
+          </p>
+        </div>
+        
+      </section>
+      <section class="about skills "  id="skills">
+        <div class="textSkills">
+          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">skills()</span></h1>
+          <div class="skillsBadges">
+            
+            <div class="js"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png?20120221235433" alt=""><p>JavaScript</p></div>
+            <div class="html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425" alt=""><p>HTML</p></div>
+            <div class="css"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png?20160530175649" alt=""><p>Css</p></div>
+            <div class="nodejs"><img src="https://upload.wikimedia.org/wikipedia/commons/6/67/NodeJS.png?20130122160021" alt=""><p>NodeJs</p></div>
+            <div class="react"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" alt=""><p>ReactJs</p></div>
+            <div class="electronjs"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/640px-Electron_Software_Framework_Logo.svg.png" alt=""><p>ElectronJs</p></div>
+            <div class="php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/640px-PHP-logo.svg.png" alt=""><p>PHP</p></div>
+            <div class="vue"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/640px-Vue.js_Logo_2.svg.png" alt=""><p>VueJS</p></div>
+            <div class="express"><img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt=""><p>ExpressJs</p></div>
+            <div class="cpp"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/640px-ISO_C%2B%2B_Logo.svg.png" alt=""><p>C/C++</p></div>
+            <div class="prisma"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQVFTyNHD2au2UDsZkmq-QwIygCV1eAhnH8GjC0UTQVeoR3x7a2tsImGVZsIhMKDDJU8&usqp=CAU" alt=""><p>Prisma</p></div>
+            <div class="firebase"><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Touchicon-180.png?20200723100028" alt=""><p>FireBase</p></div>
+            <div class="threejs"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Three.js_Icon.svg/640px-Three.js_Icon.svg.png" alt=""><p>ThreeJs</p></div>
+            <div class="python"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png" alt=""><p>Python</p></div>
+            <div class="mysql"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/MySQL_Dolphin.jpg/640px-MySQL_Dolphin.jpg" alt=""><p>MySQL</p></div>
+            <div class="mongodb"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mongodb-icon.svg/640px-Mongodb-icon.svg.png" alt=""><p>MongoDB</p></div>
+            <div class="sqllite"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/382px-SQLite370.svg.png?20140602232932" alt=""><p>SQLLite</p></div>
+
+          </div>
+        </div>
+
+        <canvas id="brain"></canvas>
+      </section>
+
+      <section class="about project" id="project">
+        <div class="textProject">
+          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">projects()</span></h1>
+          <div class="allProjects" id="projects">
+
+          </div>
+          <center>
+          <p class="moreProject">For More Projects Check My <a href="https://github.com/Yassin6up" class="githubGo">Github</a></p>
+        </center>
+        </div>
+
+      </section>
+     
+      <section class="about workspace" id="workSpace">
+        <div class="textworkSpace">
+          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">workSpace()</span></h1>
+          <div class="space" id="">
+            <div class="cercle3">
+              <div class="cercle2">
+                <div class="cercle1">
+                  <p id="qute"></p>
+                  <code id="author"></code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about contact" id="socialMedia">
+        <div class="textContact">
+          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">socialMedia()</span></h1>
+          <div class="allContacts" >
+            <div class="card">
+              <div class="qrCodeDive">
+                <img  class="qrcode" id="qrIN" src=""> 
+              </div>
+              <h4 style="font-size: 20px;">Yassin Ait Elhardouf</h4>
+              <a class="contactPhoto" href="https://www.linkedin.com/in/yassin-ait-elhardouf-676974247/" target="_blank">
+              <img class="socialAcount" src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+              </a>
+            </div>
+            <div class="card">
+              <div class="qrCodeDive">
+                <img  class="qrcode" id="qrFB" src=""> 
+              </div>
+              <h4 style="font-size: 20px;">Yassin Lkokabi</h4>
+              <a class="contactPhoto" href="https://www.facebook.com/profile.php?id=100015338087618" target="_blank">
+              <img class="socialAcount" src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png">
+              </a>
+            </div>
+            <div class="card">
+              <div class="qrCodeDive">
+                <img  class="qrcode" id="qrINS" src=""> 
+              </div>
+              <h4 style="font-size: 20px;">Yassin_Elhardofi</h4>
+              <a class="contactPhoto" href="https://www.instagram.com/yassin_elhardofi/" target="_blank">
+              <img class="socialAcount" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about contactform" id="contact">
+        <div class="textContactForm">
+          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">contact()</span></h1>
+          <div class="contactForm">
+            <div class="myInfo">
+              <div class="TalkTitle">
+                <h1>Lets Talk 🎈</h1>
+              </div>
+              <div class="descContact">
+                <p>I will be happy to send you a message and communicate with me. If you encounter any problem, message me. If you need anything, contact me.</p>
+              </div>
+              <div class="contactIcons">
+                <a href="https://wa.link/x6j8yx" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #04ab59;"></i>  +212687802700</a>
+                <a href="mailto: contactmeyassin@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="color: #61AFEF;"></i>  contactmeyassin@gmail.com</a>
+              </div>
+            </div>
+          <form action="https://formsubmit.co/contactmeyassin@gmail.com" method="POST">
+            <div>
+              <label for="email">Email</label>
+              <input class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" type="email" id="email" name="email" placeholder="Example@gmail.com" required>
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea name="message" placeholder="Hello, ...." id="message" rows="4" class="block  rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+            </div>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="http://localhost:5173/thanks.html">
+              <button class="block rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" id="submitButton" type="submit">Send</button>
+          </form>
+          </div>
+
+          
+        </div>
+      </section>
+      <footer class="about footer" id="footer">
+        <div class="textFooter">
+          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">end()</span></h1>
+          <div class="footerContent" id="projects">
+          <div class="page1">
+            <div class="footerTitle">
+              <h1>The End</h1>
+            </div>
+          </div>
+          <div class="page2">
+            <div class="links">
+              <a href="#about">
+              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">about()</span></h1>
+            </a>
+            <a href="#skills">
+              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">skills()</span></h1>
+            </a>
+            <a href="#projects">
+              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">projects()</span></h1>
+            </a>
+            <a href="#workSpace">
+              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">workSpace()</span></h1>
+            </a>
+            <a href="#socialMedia">
+              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">socialMedia()</span></h1>
+            </a>
+            <a href="#contact">
+              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">contact()</span></h1>
+            </a>
+            </div>
+            <div class="credit">
+              <p> © 2023 Yassine ait Elhrdouf </p>
+            </div>
+          </div>
+          </div>
+        
+        </div>
+  
+      </footer>
+
+    </main>
+    
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>    <script type="module" src="./show.js"></script>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/brain.js"></script>
+    <script src="libs/wow.min.js"></script>
+    
+    <script>
+      new WOW().init();
+      </script>
   </body>
 </html>

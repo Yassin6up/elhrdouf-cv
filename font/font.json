@@ -1,0 +1,586 @@
+[
+  {
+    "regular": "AbhayaLibre-Regular",
+    "bold": "AbhayaLibre-Bold",
+    "fontFamily": "Abhaya Libre"
+  },
+  {
+    "regular": "AllertaStencil-Regular",
+    "fontFamily": "Allerta Stencil"
+  },
+  {
+    "regular": "Anton-Regular",
+    "fontFamily": "Anton"
+  },
+  {
+    "regular": "Arbutus-Regular",
+    "fontFamily": "Arbutus"
+  },
+  {
+    "fontFamily": "Arvo",
+    "bold": "Arvo-Bold",
+    "italic": "Arvo-Italic",
+    "regular": "Arvo",
+    "boldItalic": "Arvo-BoldItalic"
+  },
+  {
+    "regular": "Atma-Regular",
+    "bold": "Atma-Bold",
+    "fontFamily": "Atma"
+  },
+  {
+    "regular": "Audiowide-Regular",
+    "fontFamily": "Audiowide"
+  },
+  {
+    "regular": "AutourOne-Regular",
+    "fontFamily": "Autour One"
+  },
+  {
+    "fontFamily": "Averia Libre",
+    "bold": "AveriaLibre-Bold",
+    "italic": "AveriaLibre-Italic",
+    "regular": "AveriaLibre-Regular",
+    "boldItalic": "AveriaLibre-BoldItalic"
+  },
+  {
+    "regular": "Belgrano-Regular",
+    "fontFamily": "Belgrano"
+  },
+  {
+    "regular": "Boogaloo-Regular",
+    "fontFamily": "Boogaloo"
+  },
+  {
+    "regular": "BowlbyOneSC-Regular",
+    "fontFamily": "Bowlby One SC"
+  },
+  {
+    "regular": "Butcherman-Regular",
+    "fontFamily": "Butcherman"
+  },
+  {
+    "regular": "CaesarDressing",
+    "fontFamily": "Caesar Dressing"
+  },
+  {
+    "regular": "Cambo-Regular",
+    "fontFamily": "Cambo"
+  },
+  {
+    "regular": "Capriola-Regular",
+    "fontFamily": "Capriola"
+  },
+  {
+    "regular": "CevicheOne-Regular",
+    "fontFamily": "Ceviche One"
+  },
+  {
+    "regular": "Chathura-Regular",
+    "bold": "Chathura-Bold",
+    "fontFamily": "Chathura"
+  },
+  {
+    "regular": "ChauPhilomeneOne-Regular",
+    "italic": "ChauPhilomeneOne-Italic",
+    "fontFamily": "Chau Philomene One"
+  },
+  {
+    "regular": "ChelaOne-Regular",
+    "fontFamily": "Chela One"
+  },
+  {
+    "fontFamily": "Chivo",
+    "bold": "Chivo-Bold",
+    "italic": "Chivo-Italic",
+    "regular": "Chivo-Regular",
+    "boldItalic": "Chivo-BoldItalic"
+  },
+  {
+    "regular": "Codystar",
+    "fontFamily": "Codystar"
+  },
+  {
+    "regular": "Comfortaa-Regular",
+    "bold": "Comfortaa-Bold",
+    "fontFamily": "Comfortaa"
+  },
+  {
+    "regular": "ContrailOne-Regular",
+    "fontFamily": "Contrail One"
+  },
+  {
+    "regular": "Copse",
+    "fontFamily": "Copse"
+  },
+  {
+    "fontFamily": "Cormorant Infant",
+    "bold": "CormorantInfant-Bold",
+    "italic": "CormorantInfant-Italic",
+    "regular": "CormorantInfant-Regular",
+    "boldItalic": "CormorantInfant-BoldItalic"
+  },
+  {
+    "regular": "CreteRound-Regular",
+    "italic": "CreteRound-Italic",
+    "fontFamily": "Crete Round"
+  },
+  {
+    "regular": "CroissantOne-Regular",
+    "fontFamily": "Croissant One"
+  },
+  {
+    "regular": "DeliusUnicase-Regular",
+    "bold": "DeliusUnicase-Bold",
+    "fontFamily": "Delius Unicase"
+  },
+  {
+    "regular": "DidactGothic-Regular",
+    "fontFamily": "Didact Gothic"
+  },
+  {
+    "regular": "DiplomataSC-Regular",
+    "fontFamily": "Diplomata SC"
+  },
+  {
+    "regular": "EmblemaOne-Regular",
+    "fontFamily": "Emblema One"
+  },
+  {
+    "regular": "EricaOne-Regular",
+    "fontFamily": "Erica One"
+  },
+  {
+    "regular": "Esteban",
+    "fontFamily": "Esteban"
+  },
+  {
+    "regular": "Ewert-Regular",
+    "fontFamily": "Ewert"
+  },
+  {
+    "regular": "Fascinate-Regular",
+    "fontFamily": "Fascinate"
+  },
+  {
+    "regular": "FascinateInline-Regular",
+    "fontFamily": "Fascinate Inline"
+  },
+  {
+    "regular": "FasterOne-Regular",
+    "fontFamily": "Faster One"
+  },
+  {
+    "regular": "FjallaOne-Regular",
+    "fontFamily": "Fjalla One"
+  },
+  {
+    "regular": "Flamenco-Regular",
+    "fontFamily": "Flamenco"
+  },
+  {
+    "regular": "FrankRuhlLibre-Regular",
+    "bold": "FrankRuhlLibre-Bold",
+    "fontFamily": "Frank Ruhl Libre"
+  },
+  {
+    "regular": "FrederickatheGreat-Regular",
+    "fontFamily": "Fredericka the Great"
+  },
+  {
+    "regular": "FredokaOne-Regular",
+    "fontFamily": "Fredoka One"
+  },
+  {
+    "regular": "Geo-Regular",
+    "fontFamily": "Geo"
+  },
+  {
+    "regular": "Geostar-Regular",
+    "fontFamily": "Geostar"
+  },
+  {
+    "regular": "GeostarFill-Regular",
+    "fontFamily": "Geostar Fill"
+  },
+  {
+    "regular": "GiveYouGlory",
+    "fontFamily": "Give You Glory"
+  },
+  {
+    "regular": "Glegoo-Regular",
+    "bold": "Glegoo-Bold",
+    "fontFamily": "Glegoo"
+  },
+  {
+    "regular": "GoblinOne",
+    "fontFamily": "Goblin One"
+  },
+  {
+    "regular": "Gorditas-Regular",
+    "bold": "Gorditas-Bold",
+    "fontFamily": "Gorditas"
+  },
+  {
+    "regular": "Graduate-Regular",
+    "fontFamily": "Graduate"
+  },
+  {
+    "regular": "GravitasOne",
+    "fontFamily": "Gravitas One"
+  },
+  {
+    "regular": "HanaleiFill-Regular",
+    "fontFamily": "Hanalei Fill"
+  },
+  {
+    "regular": "HappyMonkey-Regular",
+    "fontFamily": "Happy Monkey"
+  },
+  {
+    "regular": "HennyPenny-Regular",
+    "fontFamily": "Henny Penny"
+  },
+  {
+    "regular": "IM_FELL_DW_Pica_Roman",
+    "italic": "IM_FELL_DW_Pica_Italic",
+    "fontFamily": "IM FELL DW Pica"
+  },
+  {
+    "regular": "IM_FELL_Double_Pica_SC",
+    "fontFamily": "IM FELL Double Pica SC"
+  },
+  {
+    "regular": "Inder-Regular",
+    "fontFamily": "Inder"
+  },
+  {
+    "regular": "JacquesFrancoisShadow-Regular",
+    "fontFamily": "Jacques Francois Shadow"
+  },
+  {
+    "regular": "JuliusSansOne-Regular",
+    "fontFamily": "Julius Sans One"
+  },
+  {
+    "regular": "Jura-Regular",
+    "bold": "Jura-Bold",
+    "fontFamily": "Jura"
+  },
+  {
+    "fontFamily": "Karla",
+    "bold": "Karla-Bold",
+    "italic": "Karla-Italic",
+    "regular": "Karla-Regular",
+    "boldItalic": "Karla-BoldItalic"
+  },
+  {
+    "regular": "KaushanScript-Regular",
+    "fontFamily": "Kaushan Script"
+  },
+  {
+    "regular": "KiteOne-Regular",
+    "fontFamily": "Kite One"
+  },
+  {
+    "regular": "KronaOne-Regular",
+    "fontFamily": "Krona One"
+  },
+  {
+    "fontFamily": "Lato",
+    "bold": "Lato-Bold",
+    "italic": "Lato-Italic",
+    "regular": "Lato-Regular",
+    "boldItalic": "Lato-BoldItalic"
+  },
+  {
+    "bold": "Lekton-Bold",
+    "italic": "Lekton-Italic",
+    "regular": "Lekton-Regular",
+    "fontFamily": "Lekton"
+  },
+  {
+    "regular": "LilyScriptOne-Regular",
+    "fontFamily": "Lily Script One"
+  },
+  {
+    "regular": "LondrinaShadow-Regular",
+    "fontFamily": "Londrina Shadow"
+  },
+  {
+    "regular": "LondrinaSolid-Regular",
+    "bold": "LondrinaSolid-Black",
+    "fontFamily": "Londrina Solid"
+  },
+  {
+    "fontFamily": "Lora",
+    "bold": "Lora-Bold",
+    "italic": "Lora-Italic",
+    "regular": "Lora-Regular",
+    "boldItalic": "Lora-BoldItalic"
+  },
+  {
+    "regular": "LoversQuarrel-Regular",
+    "fontFamily": "Lovers Quarrel"
+  },
+  {
+    "regular": "Lusitana",
+    "bold": "Lusitana-Bold",
+    "fontFamily": "Lusitana"
+  },
+  {
+    "regular": "Lustria-Regular",
+    "fontFamily": "Lustria"
+  },
+  {
+    "regular": "Mada-Regular",
+    "bold": "Mada-Bold",
+    "fontFamily": "Mada"
+  },
+  {
+    "fontFamily": "Marvel",
+    "bold": "Marvel-Bold",
+    "italic": "Marvel-Italic",
+    "regular": "Marvel-Regular",
+    "boldItalic": "Marvel-BoldItalic"
+  },
+  {
+    "regular": "McLaren-Regular",
+    "fontFamily": "McLaren"
+  },
+  {
+    "regular": "MedulaOne-Regular",
+    "fontFamily": "Medula One"
+  },
+  {
+    "fontFamily": "Montserrat",
+    "bold": "Montserrat-Bold",
+    "italic": "Montserrat-Italic",
+    "regular": "Montserrat-Regular",
+    "boldItalic": "Montserrat-BoldItalic"
+  },
+  {
+    "fontFamily": "Montserrat Alternates",
+    "bold": "MontserratAlternates-Bold",
+    "italic": "MontserratAlternates-Italic",
+    "regular": "MontserratAlternates-Regular",
+    "boldItalic": "MontserratAlternates-BoldItalic"
+  },
+  {
+    "regular": "MontserratSubrayada-Regular",
+    "bold": "MontserratSubrayada-Bold",
+    "fontFamily": "Montserrat Subrayada"
+  },
+  {
+    "regular": "NTR",
+    "fontFamily": "NTR"
+  },
+  {
+    "regular": "NewRocker-Regular",
+    "fontFamily": "New Rocker"
+  },
+  {
+    "regular": "NixieOne-Regular",
+    "fontFamily": "Nixie One"
+  },
+  {
+    "regular": "Nosifer-Regular",
+    "fontFamily": "Nosifer"
+  },
+  {
+    "regular": "NovaCut",
+    "fontFamily": "Nova Cut"
+  },
+  {
+    "regular": "NovaRound",
+    "fontFamily": "Nova Round"
+  },
+  {
+    "regular": "NovaSquare",
+    "fontFamily": "Nova Square"
+  },
+  {
+    "fontFamily": "Nunito",
+    "bold": "Nunito-Bold",
+    "italic": "Nunito-Italic",
+    "regular": "Nunito-Regular",
+    "boldItalic": "Nunito-BoldItalic"
+  },
+  {
+    "regular": "Offside-Regular",
+    "fontFamily": "Offside"
+  },
+  {
+    "regular": "Oldenburg-Regular",
+    "fontFamily": "Oldenburg"
+  },
+  {
+    "regular": "OleoScript-Regular",
+    "bold": "OleoScript-Bold",
+    "fontFamily": "Oleo Script"
+  },
+  {
+    "regular": "Orbitron-Regular",
+    "bold": "Orbitron-Bold",
+    "fontFamily": "Orbitron"
+  },
+  {
+    "regular": "Oswald-Regular",
+    "bold": "Oswald-Bold",
+    "fontFamily": "Oswald"
+  },
+  {
+    "regular": "Pacifico-Regular",
+    "fontFamily": "Pacifico"
+  },
+  {
+    "regular": "PathwayGothicOne-Regular",
+    "fontFamily": "Pathway Gothic One"
+  },
+  {
+    "regular": "PatuaOne-Regular",
+    "fontFamily": "Patua One"
+  },
+  {
+    "regular": "PermanentMarker-Regular",
+    "fontFamily": "Permanent Marker"
+  },
+  {
+    "regular": "PirataOne-Regular",
+    "fontFamily": "Pirata One"
+  },
+  {
+    "regular": "Plaster-Regular",
+    "fontFamily": "Plaster"
+  },
+  {
+    "fontFamily": "Playfair Display SC",
+    "bold": "PlayfairDisplaySC-Bold",
+    "italic": "PlayfairDisplaySC-Italic",
+    "regular": "PlayfairDisplaySC-Regular",
+    "boldItalic": "PlayfairDisplaySC-BoldItalic"
+  },
+  {
+    "fontFamily": "Poppins",
+    "bold": "Poppins-Bold",
+    "italic": "Poppins-Italic",
+    "regular": "Poppins-Regular",
+    "boldItalic": "Poppins-BoldItalic"
+  },
+  {
+    "regular": "PressStart2P-Regular",
+    "fontFamily": "Press Start 2P"
+  },
+  {
+    "regular": "Quattrocento",
+    "bold": "Quattrocento-Bold",
+    "fontFamily": "Quattrocento"
+  },
+  {
+    "regular": "Quicksand-Regular",
+    "bold": "Quicksand-Bold",
+    "fontFamily": "Quicksand"
+  },
+  {
+    "fontFamily": "Raleway",
+    "bold": "Raleway-Bold",
+    "italic": "Raleway-Italic",
+    "regular": "Raleway-Regular",
+    "boldItalic": "Raleway-BoldItalic"
+  },
+  {
+    "regular": "Ranchers-Regular",
+    "fontFamily": "Ranchers"
+  },
+  {
+    "fontFamily": "Roboto",
+    "bold": "Roboto-Bold",
+    "italic": "Roboto-Italic",
+    "regular": "Roboto-Regular",
+    "boldItalic": "Roboto-BoldItalic"
+  },
+  {
+    "regular": "RobotoSlab-Regular",
+    "bold": "RobotoSlab-Bold",
+    "fontFamily": "Roboto Slab"
+  },
+  {
+    "regular": "RockSalt-Regular",
+    "fontFamily": "Rock Salt"
+  },
+  {
+    "fontFamily": "Rubik",
+    "bold": "Rubik-Bold",
+    "italic": "Rubik-Italic",
+    "regular": "Rubik-Regular",
+    "boldItalic": "Rubik-BoldItalic"
+  },
+  {
+    "regular": "RugeBoogie-Regular",
+    "fontFamily": "Ruge Boogie"
+  },
+  {
+    "regular": "Sacramento-Regular",
+    "fontFamily": "Sacramento"
+  },
+  {
+    "regular": "ShareTech-Regular",
+    "fontFamily": "Share Tech"
+  },
+  {
+    "regular": "ShareTechMono-Regular",
+    "fontFamily": "Share Tech Mono"
+  },
+  {
+    "regular": "Shrikhand-Regular",
+    "fontFamily": "Shrikhand"
+  },
+  {
+    "regular": "SirinStencil-Regular",
+    "fontFamily": "SirinStencil"
+  },
+  {
+    "regular": "Spirax-Regular",
+    "fontFamily": "Spirax"
+  },
+  {
+    "regular": "SquadaOne-Regular",
+    "fontFamily": "Squada One"
+  },
+  {
+    "regular": "StintUltraExpanded-Regular",
+    "fontFamily": "Stint Ultra Expanded"
+  },
+  {
+    "regular": "SuezOne-Regular",
+    "fontFamily": "Suez One"
+  },
+  {
+    "regular": "Supermercado-Regular",
+    "fontFamily": "Supermercado"
+  },
+  {
+    "regular": "TulpenOne-Regular",
+    "fontFamily": "Tulpen One"
+  },
+  {
+    "fontFamily": "Ubuntu",
+    "bold": "Ubuntu-Bold",
+    "italic": "Ubuntu-Italic",
+    "regular": "Ubuntu-Regular",
+    "boldItalic": "Ubuntu-BoldItalic"
+  },
+  {
+    "regular": "Vidaloka-Regular",
+    "fontFamily": "Vidaloka "
+  },
+  {
+    "regular": "XanhMono-Regular",
+    "italic": "XanhMono-Italic",
+    "fontFamily": "Xanh Mono"
+  },
+  {
+    "regular": "Yesteryear-Regular",
+    "fontFamily": "Yesteryear"
+  }
+]
