@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import './style.css'
+import '../css/style.css'
 import WebGL from 'three/addons/capabilities/WebGL.js';
 import {
   GLTFLoader
@@ -20,7 +20,7 @@ let scene = new THREE.Scene();
 let camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 const renderer = new THREE.WebGLRenderer({
-  canvas: document.getElementById('brain'),
+  canvas: document.getElementById('bg'),
   antialias: true,
   alpha: true
 });
@@ -44,53 +44,29 @@ camera.position.set(0, 0, 0);
 
 
 const loader = new GLTFLoader()
+let pc = null;
+loader.load('../../assets/pc.glb', (gltf) => {
+  pc = gltf.scene
+  zoomIn(pc)
+  pc.traverse((child) => {
+    if (child.isMesh) {
+      child.material.side = THREE.DoubleSide;
+    }
+  });
 
-let dron;
-let mixers = [];
-const clock = new THREE.Clock();
-loader.load("./source/dron.gltf", (gltf) => {
-  dron = gltf.scene
-  scene.add(dron);
 
   
-  dron.position.z = -5
+  scene.add(pc);
+  pc.position.set(0,0,0)
+  pc.rotation.x = 1
+  // camera.position.set(10, 5, 10)
+  controls.target.copy(pc.position)
 
-  controls.target.copy(dron.position)
+  zoomIn(pc)
 
-  const animations = gltf.animations;
-  if (animations && animations.length > 0) {
-    const mixer = new THREE.AnimationMixer(dron);
-
-    // Store the mixer in the mixers array
-    mixers.push(mixer);
-
-    // Add each animation to the mixer and set looping
-    animations.forEach((clip) => {
-      const action = mixer.clipAction(clip);
-
-      action.clampWhenFinished = true; // Keep the last frame
-      action.play();
-
-      action.loop = THREE.LoopRepeat;
-      action.repetitions = Infinity; // Set infinite repetitions
-      action.clampWhenFinished = false;
-      action.reset(); // Reset the action to the beginning when it finishes
-      action.play();
-    });
-    // Call the animation loop to update the mixer
-    animate();
-  }
-});
-
-
-
-
-
-
-
-
-
-
+}, undefined, (err) => {
+  console.log(err);
+})
 function zoomIn(object) {
   const box = new THREE.Box3().setFromObject(object); // Calculate the bounding box of the house object
   const sphere = new THREE.Sphere();
@@ -111,23 +87,47 @@ function animate() {
   requestAnimationFrame(animate)
    controls.update();
   
-  mixers.forEach((mixer) => {
-    mixer.update(clock.getDelta());
-  });
+  // mixers.forEach((mixer) => {
+  //   mixer.update(clock.getDelta());
+  // });
   renderer.render(scene, camera);
+}
+if (WebGL.isWebGLAvailable()) {
+
+  // Initiate function or other initializations here
+  animate();
+
+} else {
+  const warning = WebGL.getWebGLErrorMessage();
+  document.getElementById('container').appendChild(warning);
 }
 
 
 
+// let brain = null;
+// loader.load('./assets/brain/brain.glb', (gltf) => {
+//   brain = gltf.scene
+
+//   brain.traverse((child) => {
+//     if (child.isMesh) {
+//       child.material.side = THREE.DoubleSide;
+//     }
+//   });
 
 
-if (WebGL.isWebGLAvailable()) {
 
-    // Initiate function or other initializations here
-    animate();
-  
-  } else {
-    const warning = WebGL.getWebGLErrorMessage();
-    document.getElementById('container').appendChild(warning);
-  }
-  
+//   // scene.add(brain);
+//   brain.position.x = 10
+
+
+//   // Apply the scale to the model
+//   brain.scale.set(1, 1, 1);
+//   // controls.target.copy(brain.position)
+
+//   // zoomIn(brain)
+
+// }, undefined, (err) => {
+//   console.log(err);
+// })
+
+

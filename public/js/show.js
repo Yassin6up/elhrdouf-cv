@@ -53,7 +53,7 @@ let projectsContainer = document.getElementById("projects")
 
 let projects = [{
         name: "Windows Web",
-        photo: "./public/windows.png",
+        photo: "./assets/windows.png",
         deps: {
             html: `<div class="html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425" alt=""><p>HTML</p></div>`,
             css: `<div class="css"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png?20160530175649" alt=""><p>Css</p></div>`,
@@ -70,7 +70,7 @@ let projects = [{
     },
     {
         name: "Youxo Ai Bot",
-        photo: "./public/youxo.png",
+        photo: "./assets/youxo.png",
         deps: {
             nodejs: "",
             sqllite: "",
@@ -87,7 +87,7 @@ let projects = [{
     },
     {
         name: "Acolux Web",
-        photo: "./public/acolux.png",
+        photo: "./assets/acolux.png",
         deps: {
             firebase: "",
             html: `<div class="html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425" alt=""><p>HTML</p></div>`,
@@ -104,7 +104,7 @@ let projects = [{
     },
     {
         name: "HQPAcademy Web",
-        photo: "./public/hqp.png",
+        photo: "./assets/hqp.png",
         deps: {
             firebase: "",
             html: `<div class="html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425" alt=""><p>HTML</p></div>`,
@@ -139,7 +139,7 @@ let projects = [{
     },
     {
         name: "Finito Game",
-        photo: "./public/finto.png",
+        photo: "./assets/finto.png",
         deps: {
             firebase: "",
             html: `<div class="html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425" alt=""><p>HTML</p></div>`,
