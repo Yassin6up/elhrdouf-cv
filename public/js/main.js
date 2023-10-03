@@ -45,7 +45,7 @@ camera.position.set(0, 0, 0);
 
 const loader = new GLTFLoader()
 let pc = null;
-loader.load('../../assets/pc.glb', (gltf) => {
+loader.load('../assets/pc.glb', (gltf) => {
   pc = gltf.scene
   zoomIn(pc)
   pc.traverse((child) => {

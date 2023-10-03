@@ -47,7 +47,7 @@ const loader = new GLTFLoader()
 let dron;
 let mixers = [];
 const clock = new THREE.Clock();
-loader.load("../../assets/dron.gltf", (gltf) => {
+loader.load("../assets/dron.gltf", (gltf) => {
   dron = gltf.scene
   scene.add(dron);
 
