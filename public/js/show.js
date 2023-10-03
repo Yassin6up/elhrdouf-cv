@@ -243,3 +243,6 @@ fetch('https://api.quotable.io/random').then((data)=>{
     document.getElementById('qute').innerHTML = quote.content
     document.getElementById('author').innerHTML = quote.author
 })
+
+
+document.getElementById("age").innerHTML = (new Date()).getFullYear() - 2005 ;
