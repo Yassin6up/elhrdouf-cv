@@ -62,6 +62,7 @@ let projects = [{
             nodejs: "",
             sqllite: "",
             prisma: "",
+             sql: "",
             reactjs: "",
             expressjs: ""
         },
@@ -77,6 +78,7 @@ let projects = [{
             prisma: "",
             reactjs: "",
             expressjs: "",
+             sql: "",
             html: `<div class="html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425" alt=""><p>HTML</p></div>`,
             css: `<div class="css"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png?20160530175649" alt=""><p>Css</p></div>`,
             js: `<div class="js"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png?20120221235433" alt=""><p>JavaScript</p></div>`,
@@ -95,6 +97,8 @@ let projects = [{
             js: `<div class="js"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png?20120221235433" alt=""><p>JavaScript</p></div>`,
             nodejs: "",
             sqllite: "",
+            sql: "",
+            sqllite: "",
             prisma: "",
             reactjs: "",
             expressjs: ""
@@ -107,6 +111,7 @@ let projects = [{
         photo: "../assets/hqp.png",
         deps: {
             firebase: "",
+             sql: "",
             html: `<div class="html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425" alt=""><p>HTML</p></div>`,
             css: `<div class="css"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png?20160530175649" alt=""><p>Css</p></div>`,
             js: `<div class="js"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png?20120221235433" alt=""><p>JavaScript</p></div>`,
@@ -132,7 +137,8 @@ let projects = [{
             sqllite: "",
             prisma: "",
             reactjs: "",
-            expressjs: ""
+            expressjs: "",
+            sql: "",
         },
         gihtub: "https://github.com/Yassin6up/ShopGame",
         web: "https://gaming-site-six.vercel.app/"
@@ -146,7 +152,7 @@ let projects = [{
             css: `<div class="css"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png?20160530175649" alt=""><p>Css</p></div>`,
             js: `<div class="js"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png?20120221235433" alt=""><p>JavaScript</p></div>`,
             nodejs: "",
-            sql: `<div class="js"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/MySQL_Dolphin.jpg/640px-MySQL_Dolphin.jpg" alt=""><p>SQLLite</p></div>`,
+            sql: `<div class="sqllite"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/MySQL_Dolphin.jpg/640px-MySQL_Dolphin.jpg" alt=""><p>SQLLite</p></div>`,
             sqllite: "",
             prisma: "",
             reactjs: "",
