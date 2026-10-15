@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You 🎈</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body>
-    <!-- component -->
-<div class="bg-gray-100 h-screen">
-    <div class="bg-white p-6  md:mx-auto">
-      <svg viewBox="0 0 24 24" class="text-green-600 w-16 h-16 mx-auto my-6">
-          <path fill="currentColor"
-              d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z">
-          </path>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#07070c" />
+    <title>Message sent | Yassine Ait Elhrdouf</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script type="module" src="/src/thanks.js"></script>
+  </head>
+  <body class="thanks">
+    <div class="ambient" aria-hidden="true">
+      <span class="orb orb--a"></span>
+      <span class="orb orb--b"></span>
+      <span class="grid-bg"></span>
+    </div>
+    <main class="thanks__card glass">
+      <svg class="thanks__check" viewBox="0 0 52 52" aria-hidden="true">
+        <circle cx="26" cy="26" r="24" fill="none" />
+        <path fill="none" d="M15 27l7 7 15-15" />
       </svg>
-      <div class="text-center">
-          <h3 class="md:text-2xl text-base text-gray-900 font-semibold text-center">Message Done !</h3>
-          <p class="text-gray-600 my-2">Thank you for sending your Message.</p>
-          <p> Have a great day! </p>
-          <div class="py-10 text-center">
-              <a href="http://localhost:5173/" class="px-12 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3">
-                  GO BACK 
-             </a>
-          </div>
-      </div>
-  </div>
-</div>
-
-<script src="./redirect.js"></script>
-</body>
+      <h1>Message sent<span class="grad">.</span></h1>
+      <p>Thanks for reaching out. I'll get back to you as soon as I can.</p>
+      <p class="mono thanks__count">Returning home in <span id="count">8</span>s…</p>
+      <a class="btn btn--primary" href="/">Back to portfolio</a>
+    </main>
+  </body>
 </html>

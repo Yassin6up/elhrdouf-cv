@@ -2,249 +2,436 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/110790693?v=4">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yassine Ait Elhrdouf</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="./libs/animate.css">
-    <script src="https://kit.fontawesome.com/e85afcd4d3.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Yassine Ait Elhrdouf | Full Stack Developer in Morocco</title>
+    <meta name="description" content="Yassine Ait Elhrdouf is a Full Stack Developer from Morocco building fast, responsive websites and web apps with JavaScript, React, Node.js, PHP and Three.js. See projects and get in touch." />
+    <meta name="author" content="Yassine Ait Elhrdouf" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#07070c" />
+    <link rel="canonical" href="%VITE_SITE_URL%/" />
+
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Yassine Ait Elhrdouf" />
+    <meta property="og:title" content="Yassine Ait Elhrdouf | Full Stack Developer" />
+    <meta property="og:description" content="Full Stack Developer from Morocco crafting fast, interactive web experiences with React, Node.js and Three.js." />
+    <meta property="og:url" content="%VITE_SITE_URL%/" />
+    <meta property="og:image" content="%VITE_SITE_URL%/icon-512.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Yassine Ait Elhrdouf | Full Stack Developer" />
+    <meta name="twitter:description" content="Full Stack Developer from Morocco crafting fast, interactive web experiences." />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/icon-512.png" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "%VITE_SITE_URL%/#person",
+            "name": "Yassine Ait Elhrdouf",
+            "alternateName": ["Yassin Ait Elhardouf", "Yassine Elhrdouf"],
+            "jobTitle": "Full Stack Developer",
+            "url": "%VITE_SITE_URL%/",
+            "image": "%VITE_SITE_URL%/icon-512.png",
+            "email": "mailto:contactmeyassin@gmail.com",
+            "address": { "@type": "PostalAddress", "addressCountry": "MA" },
+            "knowsAbout": ["JavaScript", "React", "Node.js", "Express", "PHP", "Three.js", "Vue.js", "MongoDB", "MySQL", "Prisma", "Firebase", "Electron", "Python", "C++"],
+            "sameAs": [
+              "https://github.com/Yassin6up",
+              "https://www.linkedin.com/in/yassin-ait-elhardouf-676974247/",
+              "https://www.instagram.com/yassin_elhardofi/",
+              "https://www.facebook.com/profile.php?id=100015338087618"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "%VITE_SITE_URL%/#website",
+            "url": "%VITE_SITE_URL%/",
+            "name": "Yassine Ait Elhrdouf | Portfolio",
+            "author": { "@id": "%VITE_SITE_URL%/#person" },
+            "inLanguage": "en"
+          }
+        ]
+      }
+    </script>
+    <script type="module" src="/src/main.js"></script>
   </head>
+
   <body>
-    <audio class="audio" style="display: none">
-      <source src="./musics/lofi-study-112191.mp3" type="audio/mp3" />
-    </audio>
-    <audio class="audio" style="display: none">
-      <source
-        src="./musics/fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.mp3"
-        type="audio/mp3" />
-    </audio>
-    <audio  id="clickSound" style="display: none">
-      <source src="./musics/clickSound.wav" type="audio/mp3" />
-    </audio>
+    <a class="skip-link" href="#about">Skip to content</a>
 
-    <div class="pointer" id="dot"></div>
-
-    <div class="nav">
-      <button class="button-87" id="musicButton">
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          stroke="white"
-          fill="none"
-          stroke-linejoin="round"
-          stroke-width="1.125"
-          stroke-linecap="round"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M20 16V12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12V16M6 19.5C4.89543 19.5 4 18.6046 4 17.5V15.5C4 14.3954 4.89543 13.5 6 13.5C6.55228 13.5 7 13.9477 7 14.5V18.5C7 19.0523 6.55228 19.5 6 19.5ZM18 19.5C17.4477 19.5 17 19.0523 17 18.5V14.5C17 13.9477 17.4477 13.5 18 13.5C19.1046 13.5 20 14.3954 20 15.5V17.5C20 18.6046 19.1046 19.5 18 19.5Z"></path>
-        </svg>
-      </button>
+    <!-- Loader (fades out on first paint; never blocks content for crawlers) -->
+    <div class="loader" aria-hidden="true">
+      <span class="loader__code">&lt;/&gt;</span>
+      <span class="loader__bar"><span></span></span>
     </div>
 
-    <main style="width:100%">
-      <section class="fristPage">
-        <h1 class="title">Yassine Elhrdouf</h1>
-        <p class="subtitle">Full Stack Developer</p>
-        
-      </section>
-      <section class="about " id="about">
-        <canvas id="bg" class="wow slideInLeft" data-wow-duration="3s"></canvas>
+    <!-- Parallax ambient background -->
+    <div class="ambient" aria-hidden="true">
+      <span class="orb orb--a" data-speed="-0.15"></span>
+      <span class="orb orb--b" data-speed="0.25"></span>
+      <span class="orb orb--c" data-speed="-0.35"></span>
+      <span class="grid-bg"></span>
+      <span class="noise"></span>
+    </div>
 
-        <div class="text wow slideInRight"  data-wow-duration="3s">
-          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">about()</span></h1>
-          <p>
-            I'm Yassin, an <span id="age">19</span>-year-old web developer from Morocco. Proficient in HTML, CSS, JavaScript, and PHP, I've created responsive websites and user-friendly interfaces. With a passion for optimizing performance and enhancing user experience, I'm eager to contribute my skills to innovative projects.
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="nav" id="top">
+      <nav class="nav__pill" aria-label="Main navigation">
+        <a class="nav__logo" href="#hero" aria-label="Back to top">
+          <span class="nav__logo-mark">&lt;/&gt;</span><span class="nav__logo-text">yassine</span>
+        </a>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#workspace">workspace</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <button class="icon-btn" id="music-btn" type="button" aria-pressed="false" aria-label="Play lofi music">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 16v-4a8 8 0 0 0-16 0v4M6 19.5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2 1 1 0 0 1 1 1v4a1 1 0 0 1-1 1Zm12 0a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1 2 2 0 0 1 2 2v2a2 2 0 0 1-2 2Z"/></svg>
+            <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+          </button>
+          <a class="btn btn--small btn--primary nav__cta" href="#contact">Hire me</a>
+          <button class="icon-btn nav__burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="smooth">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="hero" aria-label="Introduction">
+        <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero__fade" aria-hidden="true"></div>
+
+        <div class="hero__content container">
+          <p class="eyebrow hero__eyebrow" data-hero>
+            <span class="dot-live" aria-hidden="true"></span> Available for freelance &amp; full-time work
           </p>
-        </div>
-        
-      </section>
-      <section class="about skills "  id="skills">
-        <div class="textSkills">
-          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">skills()</span></h1>
-          <div class="skillsBadges">
-            
-            <div class="js"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png?20120221235433" alt=""><p>JavaScript</p></div>
-            <div class="html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425" alt=""><p>HTML</p></div>
-            <div class="css"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png?20160530175649" alt=""><p>Css</p></div>
-            <div class="nodejs"><img src="https://upload.wikimedia.org/wikipedia/commons/6/67/NodeJS.png?20130122160021" alt=""><p>NodeJs</p></div>
-            <div class="react"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" alt=""><p>ReactJs</p></div>
-            <div class="electronjs"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/640px-Electron_Software_Framework_Logo.svg.png" alt=""><p>ElectronJs</p></div>
-            <div class="php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/640px-PHP-logo.svg.png" alt=""><p>PHP</p></div>
-            <div class="vue"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/640px-Vue.js_Logo_2.svg.png" alt=""><p>VueJS</p></div>
-            <div class="express"><img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt=""><p>ExpressJs</p></div>
-            <div class="cpp"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/640px-ISO_C%2B%2B_Logo.svg.png" alt=""><p>C/C++</p></div>
-            <div class="prisma"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQVFTyNHD2au2UDsZkmq-QwIygCV1eAhnH8GjC0UTQVeoR3x7a2tsImGVZsIhMKDDJU8&usqp=CAU" alt=""><p>Prisma</p></div>
-            <div class="firebase"><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Touchicon-180.png?20200723100028" alt=""><p>FireBase</p></div>
-            <div class="threejs"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Three.js_Icon.svg/640px-Three.js_Icon.svg.png" alt=""><p>ThreeJs</p></div>
-            <div class="python"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png" alt=""><p>Python</p></div>
-            <div class="mysql"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/MySQL_Dolphin.jpg/640px-MySQL_Dolphin.jpg" alt=""><p>MySQL</p></div>
-            <div class="mongodb"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Mongodb-icon.svg/640px-Mongodb-icon.svg.png" alt=""><p>MongoDB</p></div>
-            <div class="sqllite"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/382px-SQLite370.svg.png?20140602232932" alt=""><p>SQLLite</p></div>
-
+          <h1 class="hero__title" data-hero>
+            <span class="hero__line">Yassine</span>
+            <span class="hero__line hero__line--grad">Ait Elhrdouf</span>
+          </h1>
+          <p class="hero__role" data-hero>
+            <span class="mono">const</span> role = <span class="hero__typed" id="typed">"Full Stack Developer"</span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero__lead" data-hero>
+            I design and build fast, responsive web apps, from pixel-perfect interfaces to the APIs and databases behind them, with a soft spot for interactive 3D on the web.
+          </p>
+          <div class="hero__ctas" data-hero>
+            <a class="btn btn--primary magnetic" href="#projects">View my work
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost magnetic" href="#contact">Let's talk</a>
           </div>
         </div>
 
-        <canvas id="brain"></canvas>
+        <a class="hero__scroll" href="#about" aria-label="Scroll to about section">
+          <span class="mouse"><span></span></span>
+          <span class="mono">scroll</span>
+        </a>
       </section>
 
-      <section class="about project" id="project">
-        <div class="textProject">
-          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">projects()</span></h1>
-          <div class="allProjects" id="projects">
-
-          </div>
-          <center>
-          <p class="moreProject">For More Projects Check My <a href="https://github.com/Yassin6up" class="githubGo">Github</a></p>
-        </center>
+      <!-- ============ MARQUEE ============ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>JavaScript</span><span>✦</span><span>React</span><span>✦</span><span>Node.js</span><span>✦</span><span>Three.js</span><span>✦</span><span>PHP</span><span>✦</span><span>Vue</span><span>✦</span><span>MongoDB</span><span>✦</span><span>Electron</span><span>✦</span>
+          <span>JavaScript</span><span>✦</span><span>React</span><span>✦</span><span>Node.js</span><span>✦</span><span>Three.js</span><span>✦</span><span>PHP</span><span>✦</span><span>Vue</span><span>✦</span><span>MongoDB</span><span>✦</span><span>Electron</span><span>✦</span>
         </div>
+      </div>
 
+      <!-- ============ ABOUT ============ -->
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <span class="section__index" data-speed="0.3" aria-hidden="true">01</span>
+        <div class="container about__grid">
+          <div class="about__text">
+            <h2 class="section__title reveal" id="about-title"><span class="kw">me</span>.<span class="fn">about</span>()</h2>
+            <p class="about__lead reveal">
+              I'm <strong>Yassine</strong>, a <span id="age">21</span>-year-old full stack web developer from <strong>Morocco</strong>.
+            </p>
+            <p class="reveal">
+              I build responsive websites and user-friendly interfaces with HTML, CSS, JavaScript and PHP, and full products with React, Node.js and modern databases. I care about performance, accessibility and the small interactions that make a site feel alive.
+            </p>
+            <ul class="stats reveal" aria-label="Quick facts">
+              <li><strong class="counter" data-to="6">0</strong><span>+ shipped projects</span></li>
+              <li><strong class="counter" data-to="17">0</strong><span>technologies</span></li>
+              <li><strong class="counter" data-to="4">0</strong><span>+ years coding</span></li>
+            </ul>
+            <a class="btn btn--ghost reveal" href="https://github.com/Yassin6up" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+              github.com/Yassin6up
+            </a>
+          </div>
+          <figure class="model-frame reveal" aria-label="Interactive 3D model of a computer">
+            <canvas class="model-canvas" id="pc-canvas" aria-hidden="true"></canvas>
+            <figcaption class="model-hint mono"><span class="hint-desktop">drag to rotate</span><span class="hint-touch">3D · auto-rotating</span></figcaption>
+            <span class="model-loading" aria-hidden="true"></span>
+          </figure>
+        </div>
       </section>
-     
-      <section class="about workspace" id="workSpace">
-        <div class="textworkSpace">
-          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">workSpace()</span></h1>
-          <div class="space" id="">
-            <div class="cercle3">
-              <div class="cercle2">
-                <div class="cercle1">
-                  <p id="qute"></p>
-                  <code id="author"></code>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="section skills" id="skills" aria-labelledby="skills-title">
+        <span class="section__index" data-speed="0.3" aria-hidden="true">02</span>
+        <div class="container">
+          <h2 class="section__title reveal" id="skills-title"><span class="kw">me</span>.<span class="fn">skills</span>()</h2>
+          <p class="section__sub reveal">The stack I use to take an idea from a sketch to production.</p>
+
+          <div class="bento">
+            <figure class="bento__cell bento__brain reveal" aria-label="Interactive 3D brain model">
+              <canvas class="model-canvas" id="brain-canvas" aria-hidden="true"></canvas>
+              <figcaption class="bento__caption">
+                <span class="mono">// always learning</span>
+                <strong>Curious mind, clean code.</strong>
+              </figcaption>
+              <span class="model-loading" aria-hidden="true"></span>
+            </figure>
+
+            <article class="bento__cell reveal">
+              <h3 class="bento__title"><span class="tag tag--a">01</span> Frontend</h3>
+              <ul class="chips">
+                <li><img src="/icons/javascript.svg" alt="" width="20" height="20" loading="lazy" />JavaScript</li>
+                <li><img src="/icons/html5.svg" alt="" width="20" height="20" loading="lazy" />HTML</li>
+                <li><img src="/icons/css3.svg" alt="" width="20" height="20" loading="lazy" />CSS</li>
+                <li><img src="/icons/react.svg" alt="" width="20" height="20" loading="lazy" />React</li>
+                <li><img src="/icons/vuejs.svg" alt="" width="20" height="20" loading="lazy" />Vue.js</li>
+                <li><img src="/icons/threejs.svg" alt="" width="20" height="20" loading="lazy" class="invert" />Three.js</li>
+              </ul>
+            </article>
+
+            <article class="bento__cell reveal">
+              <h3 class="bento__title"><span class="tag tag--b">02</span> Backend</h3>
+              <ul class="chips">
+                <li><img src="/icons/nodejs.svg" alt="" width="20" height="20" loading="lazy" />Node.js</li>
+                <li><img src="/icons/express.svg" alt="" width="20" height="20" loading="lazy" class="invert" />Express</li>
+                <li><img src="/icons/php.svg" alt="" width="20" height="20" loading="lazy" />PHP</li>
+                <li><img src="/icons/python.svg" alt="" width="20" height="20" loading="lazy" />Python</li>
+                <li><img src="/icons/cplusplus.svg" alt="" width="20" height="20" loading="lazy" />C / C++</li>
+              </ul>
+            </article>
+
+            <article class="bento__cell reveal">
+              <h3 class="bento__title"><span class="tag tag--c">03</span> Data</h3>
+              <ul class="chips">
+                <li><img src="/icons/mongodb.svg" alt="" width="20" height="20" loading="lazy" />MongoDB</li>
+                <li><img src="/icons/mysql.svg" alt="" width="20" height="20" loading="lazy" />MySQL</li>
+                <li><img src="/icons/sqlite.svg" alt="" width="20" height="20" loading="lazy" />SQLite</li>
+                <li><img src="/icons/prisma.svg" alt="" width="20" height="20" loading="lazy" class="invert" />Prisma</li>
+                <li><img src="/icons/firebase.svg" alt="" width="20" height="20" loading="lazy" />Firebase</li>
+              </ul>
+            </article>
+
+            <article class="bento__cell bento__wide reveal">
+              <h3 class="bento__title"><span class="tag tag--d">04</span> Desktop &amp; tooling</h3>
+              <ul class="chips">
+                <li><img src="/icons/electron.svg" alt="" width="20" height="20" loading="lazy" />Electron</li>
+                <li><img src="/icons/git.svg" alt="" width="20" height="20" loading="lazy" />Git</li>
+                <li><img src="/icons/vitejs.svg" alt="" width="20" height="20" loading="lazy" />Vite</li>
+                <li><img src="/icons/tailwindcss.svg" alt="" width="20" height="20" loading="lazy" />Tailwind</li>
+              </ul>
+              <pre class="code-snip mono" aria-hidden="true"><span class="kw">while</span> (alive) { learn(); build(); ship(); }</pre>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <span class="section__index" data-speed="0.3" aria-hidden="true">03</span>
+        <div class="container">
+          <h2 class="section__title reveal" id="projects-title"><span class="kw">me</span>.<span class="fn">projects</span>()</h2>
+          <p class="section__sub reveal">A few things I've designed, built and shipped.</p>
+
+          <div class="projects__grid">
+            <article class="project reveal tilt">
+              <div class="project__media"><img src="/images/youxo.webp" alt="Screenshot of the Youxo AI Bot web app" width="960" height="444" loading="lazy" decoding="async" data-parallax /></div>
+              <div class="project__body">
+                <h3>Youxo AI Bot</h3>
+                <p>An AI chat assistant web app with a real-time interface backed by Firebase.</p>
+                <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Firebase</li></ul>
+                <div class="project__links">
+                  <a href="https://youxo-bot.vercel.app/" target="_blank" rel="noopener" class="link-arrow">Live site</a>
+                  <a href="https://github.com/Yassin6up/Youxo-bot" target="_blank" rel="noopener" class="link-arrow">Code</a>
                 </div>
               </div>
-            </div>
+            </article>
+
+            <article class="project reveal tilt">
+              <div class="project__media"><img src="/images/windows.webp" alt="Screenshot of Windows Web, a Windows desktop recreated in the browser" width="960" height="453" loading="lazy" decoding="async" data-parallax /></div>
+              <div class="project__body">
+                <h3>Windows Web</h3>
+                <p>A Windows-style desktop experience recreated in the browser, with draggable windows and apps.</p>
+                <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+                <div class="project__links">
+                  <a href="https://windowsys.vercel.app/" target="_blank" rel="noopener" class="link-arrow">Live site</a>
+                  <a href="https://github.com/Yassin6up/windows" target="_blank" rel="noopener" class="link-arrow">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal tilt">
+              <div class="project__media"><img src="/images/acolux.webp" alt="Screenshot of the Acolux Smart website" width="960" height="449" loading="lazy" decoding="async" data-parallax /></div>
+              <div class="project__body">
+                <h3>Acolux Smart</h3>
+                <p>A responsive business website for a smart-home company, built for speed and clarity.</p>
+                <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+                <div class="project__links">
+                  <a href="https://www.acoluxsmart.com/" target="_blank" rel="noopener" class="link-arrow">Live site</a>
+                  <a href="https://github.com/Yassin6up/acoluxx" target="_blank" rel="noopener" class="link-arrow">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal tilt">
+              <div class="project__media"><img src="/images/derasat.webp" alt="Screenshot of the Derasat Translate website" width="960" height="442" loading="lazy" decoding="async" data-parallax /></div>
+              <div class="project__body">
+                <h3>Derasat Translate</h3>
+                <p>A translation services platform with a SQL-backed ordering flow.</p>
+                <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SQL</li></ul>
+                <div class="project__links">
+                  <a href="https://derasattranslate.com/" target="_blank" rel="noopener" class="link-arrow">Live site</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal tilt">
+              <div class="project__media"><img src="/images/hqp.webp" alt="Screenshot of the HQP Academy web platform" width="960" height="464" loading="lazy" decoding="async" data-parallax /></div>
+              <div class="project__body">
+                <h3>HQP Academy</h3>
+                <p>A full stack learning platform: React frontend, Express API, Prisma ORM and SQLite.</p>
+                <ul class="tags"><li>React</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>SQLite</li></ul>
+              </div>
+            </article>
+
+            <article class="project reveal tilt">
+              <div class="project__media project__media--art" aria-hidden="true">
+                <span class="art-glyph">▶</span>
+              </div>
+              <div class="project__body">
+                <h3>Games Website</h3>
+                <p>A gaming storefront with a bold, animated UI.</p>
+                <ul class="tags"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+                <div class="project__links">
+                  <a href="https://gaming-site-six.vercel.app/" target="_blank" rel="noopener" class="link-arrow">Live site</a>
+                  <a href="https://github.com/Yassin6up/ShopGame" target="_blank" rel="noopener" class="link-arrow">Code</a>
+                </div>
+              </div>
+            </article>
           </div>
+
+          <p class="projects__more reveal">More on <a href="https://github.com/Yassin6up" target="_blank" rel="noopener" class="link-underline">GitHub →</a></p>
         </div>
       </section>
 
-      <section class="about contact" id="socialMedia">
-        <div class="textContact">
-          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">socialMedia()</span></h1>
-          <div class="allContacts" >
-            <div class="card">
-              <div class="qrCodeDive">
-                <img  class="qrcode" id="qrIN" src=""> 
-              </div>
-              <h4 style="font-size: 20px;">Yassin Ait Elhardouf</h4>
-              <a class="contactPhoto" href="https://www.linkedin.com/in/yassin-ait-elhardouf-676974247/" target="_blank">
-              <img class="socialAcount" src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
-              </a>
-            </div>
-            <div class="card">
-              <div class="qrCodeDive">
-                <img  class="qrcode" id="qrFB" src=""> 
-              </div>
-              <h4 style="font-size: 20px;">Yassin Lkokabi</h4>
-              <a class="contactPhoto" href="https://www.facebook.com/profile.php?id=100015338087618" target="_blank">
-              <img class="socialAcount" src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png">
-              </a>
-            </div>
-            <div class="card">
-              <div class="qrCodeDive">
-                <img  class="qrcode" id="qrINS" src=""> 
-              </div>
-              <h4 style="font-size: 20px;">Yassin_Elhardofi</h4>
-              <a class="contactPhoto" href="https://www.instagram.com/yassin_elhardofi/" target="_blank">
-              <img class="socialAcount" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png">
-              </a>
-            </div>
+      <!-- ============ WORKSPACE ============ -->
+      <section class="section workspace" id="workspace" aria-labelledby="workspace-title">
+        <span class="section__index" data-speed="0.3" aria-hidden="true">04</span>
+        <div class="container">
+          <h2 class="section__title reveal" id="workspace-title"><span class="kw">me</span>.<span class="fn">workSpace</span>()</h2>
+          <div class="orbit reveal">
+            <span class="orbit__ring orbit__ring--3" aria-hidden="true"><i></i></span>
+            <span class="orbit__ring orbit__ring--2" aria-hidden="true"><i></i></span>
+            <span class="orbit__ring orbit__ring--1" aria-hidden="true"><i></i></span>
+            <blockquote class="orbit__quote">
+              <p id="quote">First, solve the problem. Then, write the code.</p>
+              <cite class="mono" id="quote-author">John Johnson</cite>
+            </blockquote>
           </div>
+          <ol class="process">
+            <li class="reveal"><span class="mono">01</span><h3>Discover</h3><p>Understand the goal, the users and what success looks like.</p></li>
+            <li class="reveal"><span class="mono">02</span><h3>Design</h3><p>Sketch flows and interfaces that feel simple and fast.</p></li>
+            <li class="reveal"><span class="mono">03</span><h3>Build</h3><p>Clean, tested code with performance budgets from day one.</p></li>
+            <li class="reveal"><span class="mono">04</span><h3>Ship</h3><p>Deploy, measure and keep improving.</p></li>
+          </ol>
         </div>
       </section>
 
-      <section class="about contactform" id="contact">
-        <div class="textContactForm">
-          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">contact()</span></h1>
-          <div class="contactForm">
-            <div class="myInfo">
-              <div class="TalkTitle">
-                <h1>Lets Talk 🎈</h1>
-              </div>
-              <div class="descContact">
-                <p>I will be happy to send you a message and communicate with me. If you encounter any problem, message me. If you need anything, contact me.</p>
-              </div>
-              <div class="contactIcons">
-                <a href="https://wa.link/x6j8yx" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #04ab59;"></i>  +212687802700</a>
-                <a href="mailto: contactmeyassin@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="color: #61AFEF;"></i>  contactmeyassin@gmail.com</a>
-              </div>
+      <!-- ============ CONTACT ============ -->
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <span class="section__index" data-speed="0.3" aria-hidden="true">05</span>
+        <div class="container contact__grid">
+          <div class="contact__info">
+            <h2 class="section__title reveal" id="contact-title"><span class="kw">me</span>.<span class="fn">contact</span>()</h2>
+            <p class="contact__big reveal">Have a project in mind? <span class="grad">Let's build it together.</span></p>
+            <ul class="contact__list reveal">
+              <li>
+                <a href="mailto:contactmeyassin@gmail.com">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                  contactmeyassin@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.link/x6j8yx" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3Z"/></svg>
+                  +212 687 802 700
+                </a>
+              </li>
+            </ul>
+            <ul class="socials reveal" aria-label="Social profiles">
+              <li><a href="https://github.com/Yassin6up" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/yassin-ait-elhardouf-676974247/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/yassin_elhardofi/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100015338087618" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a></li>
+            </ul>
+          </div>
+
+          <form class="form glass reveal" action="https://formsubmit.co/contactmeyassin@gmail.com" method="POST">
+            <div class="field">
+              <input type="text" id="name" name="name" placeholder=" " autocomplete="name" required />
+              <label for="name">Your name</label>
             </div>
-          <form action="https://formsubmit.co/contactmeyassin@gmail.com" method="POST">
-            <div>
+            <div class="field">
+              <input type="email" id="email" name="email" placeholder=" " autocomplete="email" required />
               <label for="email">Email</label>
-              <input class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" type="email" id="email" name="email" placeholder="Example@gmail.com" required>
             </div>
-            <div>
-              <label for="message">Message</label>
-              <textarea name="message" placeholder="Hello, ...." id="message" rows="4" class="block  rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+            <div class="field">
+              <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Tell me about your project</label>
             </div>
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_next" value="http://localhost:5173/thanks.html">
-              <button class="block rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" id="submitButton" type="submit">Send</button>
+            <input type="hidden" name="_subject" value="New message from your portfolio" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" id="form-next" value="/thanks.html" />
+            <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button class="btn btn--primary btn--block magnetic" type="submit">
+              Send message
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z"/></svg>
+            </button>
           </form>
-          </div>
-
-          
         </div>
       </section>
-      <footer class="about footer" id="footer">
-        <div class="textFooter">
-          <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">end()</span></h1>
-          <div class="footerContent" id="projects">
-          <div class="page1">
-            <div class="footerTitle">
-              <h1>The End</h1>
-            </div>
-          </div>
-          <div class="page2">
-            <div class="links">
-              <a href="#about">
-              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">about()</span></h1>
-            </a>
-            <a href="#skills">
-              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">skills()</span></h1>
-            </a>
-            <a href="#projects">
-              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">projects()</span></h1>
-            </a>
-            <a href="#workSpace">
-              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">workSpace()</span></h1>
-            </a>
-            <a href="#socialMedia">
-              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">socialMedia()</span></h1>
-            </a>
-            <a href="#contact">
-              <h1 class="aboutTitle"><span class="variable">me</span>.<span class="function">contact()</span></h1>
-            </a>
-            </div>
-            <div class="credit">
-              <p> © 2023 Yassine ait Elhrdouf </p>
-            </div>
-          </div>
-          </div>
-        
-        </div>
-  
-      </footer>
-
     </main>
-    
-    
 
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__big" aria-hidden="true"><span class="kw">me</span>.<span class="fn">end</span>()</p>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="#about">about()</a>
+          <a href="#skills">skills()</a>
+          <a href="#projects">projects()</a>
+          <a href="#workspace">workSpace()</a>
+          <a href="#contact">contact()</a>
+        </nav>
+        <p class="footer__credit mono">© <span id="year">2026</span> Yassine Ait Elhrdouf · Built with Three.js &amp; GSAP</p>
+      </div>
+    </footer>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-    <script type="module" src="./public/js/show.js"></script>
-    <script type="module" src="./public/js/main.js"></script>
-    <script type="module" src="./public/js/brain.js"></script>
-    <script src="libs/wow.min.js"></script>
-    
-    <script>
-      new WOW().init();
-      </script>
+    <audio id="music" src="/audio/lofi.mp3" preload="none" loop></audio>
+    <noscript><style>.loader{display:none}.reveal{opacity:1!important;transform:none!important}</style></noscript>
   </body>
 </html>
