@@ -169,7 +169,7 @@
               I take products from idea to launch on every screen: responsive websites, web apps and native-feeling mobile apps for iOS and Android, powered by React, React Native, Node.js and modern databases. I care about clean architecture, performance and the small details that make an app feel premium.
             </p>
             <ul class="stats reveal" aria-label="Quick facts">
-              <li><strong class="counter" data-to="6">0</strong><span>+ shipped projects</span></li>
+              <li><strong class="counter" data-to="14">0</strong><span>+ shipped products</span></li>
               <li><strong class="counter" data-to="20">0</strong><span>technologies</span></li>
               <li><strong class="counter" data-to="4">0</strong><span>+ years coding</span></li>
             </ul>
@@ -266,11 +266,166 @@
         <span class="section__index" data-speed="0.3" aria-hidden="true">03</span>
         <div class="container">
           <h2 class="section__title reveal" id="projects-title"><span class="kw">me</span>.<span class="fn">projects</span>()</h2>
-          <p class="section__sub reveal">A few things I've designed, built and shipped.</p>
+          <p class="section__sub reveal">Products I've built and shipped, from AI platforms and SaaS to iOS &amp; Android apps.</p>
 
-          <div class="projects__grid">
-            <article class="project reveal tilt">
-              <div class="project__media"><img src="/images/youxo.webp" alt="Screenshot of the Youxo AI Bot web app" width="960" height="444" loading="lazy" decoding="async" data-parallax /></div>
+          <div class="filters reveal" role="group" aria-label="Filter projects">
+            <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All <span>8</span></button>
+            <button type="button" class="filter" data-filter="web" aria-pressed="false">Web platforms <span>8</span></button>
+            <button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile apps <span>1</span></button>
+            <button type="button" class="filter" data-filter="ai" aria-pressed="false">AI <span>5</span></button>
+          </div>
+
+          <article class="showcase showcase--featured reveal" data-cat="mobile ai web">
+            <div class="showcase__body">
+              <div class="showcase__badges"><span class="badge badge--star">★ Featured</span><span class="badge badge--mobile">iOS &amp; Android</span><span class="badge badge--ai">AI</span></div>
+              <h3>Feel Balance</h3>
+              <p>An Arabic-first AI fitness app. It builds a 30-day training plan that adapts as you go, coaches you by voice or text, and connects you with real trainers and gyms you can book and pay for without leaving the app.</p>
+              <ul class="showcase__facts">
+                <li><strong>30-day</strong><span>AI plan, rebuilt as you go</span></li>
+                <li><strong>Voice + text</strong><span>two-way AI coaching</span></li>
+                <li><strong>100%</strong><span>Arabic RTL &amp; English</span></li>
+              </ul>
+              <ul class="tags"><li>Mobile app</li><li>AI coach</li><li>In-app booking &amp; payments</li><li>Coach marketplace</li></ul>
+              <div class="store-links">
+                <a class="store-btn" href="https://apps.apple.com/app/feel-balance/id6786447365" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8a4.6 4.6 0 0 0-3.6-2c-1.5-.2-3 .9-3.7.9-.8 0-2-.9-3.2-.9a4.8 4.8 0 0 0-4.1 2.5c-1.8 3-.5 7.6 1.3 10.1.8 1.2 1.8 2.6 3.1 2.5 1.3 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4a10 10 0 0 0 1.4-2.8 4.3 4.3 0 0 1-2.7-4.1ZM14 5.2a4.4 4.4 0 0 0 1-3.2 4.5 4.5 0 0 0-2.9 1.5 4.2 4.2 0 0 0-1 3.1A3.7 3.7 0 0 0 14 5.2Z"/></svg>
+                  <span><small>Download on the</small>App Store</span>
+                </a>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.feelbalance.app" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M3.6 1.8 13.4 12l-9.8 10.2a1.5 1.5 0 0 1-.6-1.2V3c0-.5.2-.9.6-1.2Zm11 11.4 2.7 2.8-11.2 6.4 8.5-9.2Zm0-2.4L6.1 1.6 17.3 8l-2.7 2.8Zm4-1.9 3 1.7a1.5 1.5 0 0 1 0 2.6l-3 1.7-3-3.1 3-2.9Z"/></svg>
+                  <span><small>Get it on</small>Google Play</span>
+                </a>
+                <a href="https://feel2balance.com/" target="_blank" rel="noopener" class="link-arrow">feel2balance.com</a>
+              </div>
+            </div>
+            <div class="showcase__stage" aria-hidden="true">
+              <span class="stage__glow"></span>
+              <div class="phone phone--lg" data-phone><span class="phone__notch"></span><img src="/images/projects/feel-balance-mobile.webp" alt="" width="390" height="844" loading="lazy" decoding="async" /></div>
+              <div class="browser browser--back" data-phone-back>
+                <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url">feel2balance.com</span></div>
+                <img src="/images/projects/feel-balance.webp" alt="" width="1200" height="750" loading="lazy" decoding="async" />
+              </div>
+            </div>
+          </article>
+
+          <div class="showcase__grid">
+            <article class="showcase reveal" data-cat="web ai">
+              <a class="showcase__media" href="https://manara.smartguidelabs.com/" target="_blank" rel="noopener" aria-label="Visit Manara">
+                <div class="browser">
+                  <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">manara.smartguidelabs.com</span></div>
+                  <img src="/images/projects/manara.webp" alt="Manara AI learning guide homepage" width="1200" height="750" loading="lazy" decoding="async" />
+                </div>
+                <div class="phone" data-phone aria-hidden="true"><span class="phone__notch"></span><img src="/images/projects/manara-mobile.webp" alt="" width="390" height="844" loading="lazy" decoding="async" /></div>
+              </a>
+              <div class="showcase__body">
+                <div class="showcase__badges"><span class="badge badge--web">Web platform</span><span class="badge badge--ai">AI</span></div>
+                <h3>Manara</h3>
+                <p>An AI learning guide for students. A 12-minute diagnosis finds your real level, then Manara decides every day what to study next, and why. Arabic-first, with dashboards for parents and schools.</p>
+                <ul class="tags"><li>AI tutor</li><li>EdTech</li><li>Arabic / English</li><li>Parents &amp; schools</li></ul>
+                <div class="project__links"><a href="https://manara.smartguidelabs.com/" target="_blank" rel="noopener" class="link-arrow">manara.smartguidelabs.com</a></div>
+              </div>
+            </article>
+            <article class="showcase reveal" data-cat="web ai">
+              <a class="showcase__media" href="https://rawaj.live/" target="_blank" rel="noopener" aria-label="Visit Rawaj">
+                <div class="browser">
+                  <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">rawaj.live</span></div>
+                  <img src="/images/projects/rawaj.webp" alt="Rawaj AI marketing agent homepage" width="1200" height="750" loading="lazy" decoding="async" />
+                </div>
+                <div class="phone" data-phone aria-hidden="true"><span class="phone__notch"></span><img src="/images/projects/rawaj-mobile.webp" alt="" width="390" height="844" loading="lazy" decoding="async" /></div>
+              </a>
+              <div class="showcase__body">
+                <div class="showcase__badges"><span class="badge badge--web">SaaS</span><span class="badge badge--ai">AI agent</span></div>
+                <h3>Rawaj</h3>
+                <p>An AI marketing agent on autopilot: it learns a brand’s voice, writes posts, generates images and videos, and publishes them automatically to Instagram, TikTok, X, YouTube and more at the best times.</p>
+                <ul class="tags"><li>AI content</li><li>Auto-publishing</li><li>Scheduling</li><li>Analytics</li></ul>
+                <div class="project__links"><a href="https://rawaj.live/" target="_blank" rel="noopener" class="link-arrow">rawaj.live</a></div>
+              </div>
+            </article>
+            <article class="showcase reveal" data-cat="web">
+              <a class="showcase__media" href="https://rawajbusiness.com/" target="_blank" rel="noopener" aria-label="Visit Rawaj Business">
+                <div class="browser">
+                  <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">rawajbusiness.com</span></div>
+                  <img src="/images/projects/rawaj-business.webp" alt="Rawaj Business platform homepage" width="1200" height="750" loading="lazy" decoding="async" />
+                </div>
+              </a>
+              <div class="showcase__body">
+                <div class="showcase__badges"><span class="badge badge--web">SaaS</span></div>
+                <h3>Rawaj Business</h3>
+                <p>Websites, online orders, delivery and bookings for restaurants, stores and salons across Oman and the Gulf, all run from one dashboard in Arabic and English.</p>
+                <ul class="tags"><li>Multi-tenant</li><li>E-commerce</li><li>Bookings</li><li>Payments</li></ul>
+                <div class="project__links"><a href="https://rawajbusiness.com/" target="_blank" rel="noopener" class="link-arrow">rawajbusiness.com</a></div>
+              </div>
+            </article>
+            <article class="showcase reveal" data-cat="web ai">
+              <a class="showcase__media" href="https://consutlus.com/" target="_blank" rel="noopener" aria-label="Visit Istashirna · Consultus">
+                <div class="browser">
+                  <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">consutlus.com</span></div>
+                  <img src="/images/projects/istashirna.webp" alt="Istashirna education and consultations platform homepage" width="1200" height="750" loading="lazy" decoding="async" />
+                </div>
+                <div class="phone" data-phone aria-hidden="true"><span class="phone__notch"></span><img src="/images/projects/istashirna-mobile.webp" alt="" width="390" height="844" loading="lazy" decoding="async" /></div>
+              </a>
+              <div class="showcase__body">
+                <div class="showcase__badges"><span class="badge badge--web">Marketplace</span><span class="badge badge--ai">AI assistant</span></div>
+                <h3>Istashirna · Consultus</h3>
+                <p>An education and consultation marketplace that connects students and clients with certified teachers and experts: courses, online lessons and paid consultations, with a built-in AI assistant.</p>
+                <ul class="tags"><li>Marketplace</li><li>EdTech</li><li>AI chat</li><li>Arabic / English</li></ul>
+                <div class="project__links"><a href="https://consutlus.com/" target="_blank" rel="noopener" class="link-arrow">consutlus.com</a></div>
+              </div>
+            </article>
+            <article class="showcase reveal" data-cat="web">
+              <a class="showcase__media" href="https://mashroui.net/" target="_blank" rel="noopener" aria-label="Visit Mashroui">
+                <div class="browser">
+                  <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">mashroui.net</span></div>
+                  <img src="/images/projects/mashroui.webp" alt="Mashroui startup-building platform homepage" width="1200" height="750" loading="lazy" decoding="async" />
+                </div>
+                <div class="phone" data-phone aria-hidden="true"><span class="phone__notch"></span><img src="/images/projects/mashroui-mobile.webp" alt="" width="390" height="844" loading="lazy" decoding="async" /></div>
+              </a>
+              <div class="showcase__body">
+                <div class="showcase__badges"><span class="badge badge--web">Web platform</span></div>
+                <h3>Mashroui</h3>
+                <p>A startup-building platform: experts review each tech idea, then idea owners team up with developers, product managers and marketers who join as co-founders for clear equity shares.</p>
+                <ul class="tags"><li>Startups</li><li>Team matching</li><li>Equity</li><li>Arabic</li></ul>
+                <div class="project__links"><a href="https://mashroui.net/" target="_blank" rel="noopener" class="link-arrow">mashroui.net</a></div>
+              </div>
+            </article>
+            <article class="showcase reveal" data-cat="web">
+              <a class="showcase__media" href="https://learnwithus.app/" target="_blank" rel="noopener" aria-label="Visit Learn with us">
+                <div class="browser">
+                  <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">learnwithus.app</span></div>
+                  <img src="/images/projects/learnwithus.webp" alt="Learn with us learning platform homepage" width="1200" height="750" loading="lazy" decoding="async" />
+                </div>
+                <div class="phone" data-phone aria-hidden="true"><span class="phone__notch"></span><img src="/images/projects/learnwithus-mobile.webp" alt="" width="390" height="844" loading="lazy" decoding="async" /></div>
+              </a>
+              <div class="showcase__body">
+                <div class="showcase__badges"><span class="badge badge--web">Web app</span></div>
+                <h3>Learn with us</h3>
+                <p>A gamified Arabic learning app for math and English from kindergarten to grade 12: interactive lessons, audio narration, games, points, daily streaks and progress reports.</p>
+                <ul class="tags"><li>EdTech</li><li>Gamification</li><li>Audio lessons</li><li>K–12</li></ul>
+                <div class="project__links"><a href="https://learnwithus.app/" target="_blank" rel="noopener" class="link-arrow">learnwithus.app</a></div>
+              </div>
+            </article>
+            <article class="showcase reveal" data-cat="web ai">
+              <a class="showcase__media" href="https://rased.smartguidelabs.com/" target="_blank" rel="noopener" aria-label="Visit Rased">
+                <div class="browser">
+                  <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser__url">rased.smartguidelabs.com</span></div>
+                  <img src="/images/projects/rased.webp" alt="Rased AI trading assistant" width="1200" height="750" loading="lazy" decoding="async" />
+                </div>
+                <div class="phone" data-phone aria-hidden="true"><span class="phone__notch"></span><img src="/images/projects/rased-mobile.webp" alt="" width="390" height="844" loading="lazy" decoding="async" /></div>
+              </a>
+              <div class="showcase__body">
+                <div class="showcase__badges"><span class="badge badge--web">Web app</span><span class="badge badge--ai">AI</span></div>
+                <h3>Rased</h3>
+                <p>An AI trading assistant that answers questions about stocks, crypto, gold and forex with live prices and technical analysis, in a fast chat interface.</p>
+                <ul class="tags"><li>AI chat</li><li>Fintech</li><li>Live market data</li></ul>
+                <div class="project__links"><a href="https://rased.smartguidelabs.com/" target="_blank" rel="noopener" class="link-arrow">rased.smartguidelabs.com</a></div>
+              </div>
+            </article>
+          </div>
+
+          <h3 class="projects__earlier reveal"><span class="mono">// </span>Earlier work</h3>
+          <div class="projects__grid projects__grid--compact">
+            <article class="project project--compact reveal">
+              <div class="project__media"><img src="/images/youxo.webp" alt="Screenshot of the Youxo AI Bot web app" width="960" height="444" loading="lazy" decoding="async" /></div>
               <div class="project__body">
                 <h3>Youxo AI Bot</h3>
                 <p>An AI chat assistant web app with a real-time interface backed by Firebase.</p>
@@ -282,8 +437,8 @@
               </div>
             </article>
 
-            <article class="project reveal tilt">
-              <div class="project__media"><img src="/images/windows.webp" alt="Screenshot of Windows Web, a Windows desktop recreated in the browser" width="960" height="453" loading="lazy" decoding="async" data-parallax /></div>
+            <article class="project project--compact reveal">
+              <div class="project__media"><img src="/images/windows.webp" alt="Screenshot of Windows Web, a Windows desktop recreated in the browser" width="960" height="453" loading="lazy" decoding="async" /></div>
               <div class="project__body">
                 <h3>Windows Web</h3>
                 <p>A Windows-style desktop experience recreated in the browser, with draggable windows and apps.</p>
@@ -295,8 +450,8 @@
               </div>
             </article>
 
-            <article class="project reveal tilt">
-              <div class="project__media"><img src="/images/acolux.webp" alt="Screenshot of the Acolux Smart website" width="960" height="449" loading="lazy" decoding="async" data-parallax /></div>
+            <article class="project project--compact reveal">
+              <div class="project__media"><img src="/images/acolux.webp" alt="Screenshot of the Acolux Smart website" width="960" height="449" loading="lazy" decoding="async" /></div>
               <div class="project__body">
                 <h3>Acolux Smart</h3>
                 <p>A responsive business website for a smart-home company, built for speed and clarity.</p>
@@ -308,8 +463,8 @@
               </div>
             </article>
 
-            <article class="project reveal tilt">
-              <div class="project__media"><img src="/images/derasat.webp" alt="Screenshot of the Derasat Translate website" width="960" height="442" loading="lazy" decoding="async" data-parallax /></div>
+            <article class="project project--compact reveal">
+              <div class="project__media"><img src="/images/derasat.webp" alt="Screenshot of the Derasat Translate website" width="960" height="442" loading="lazy" decoding="async" /></div>
               <div class="project__body">
                 <h3>Derasat Translate</h3>
                 <p>A translation services platform with a SQL-backed ordering flow.</p>
@@ -320,8 +475,8 @@
               </div>
             </article>
 
-            <article class="project reveal tilt">
-              <div class="project__media"><img src="/images/hqp.webp" alt="Screenshot of the HQP Academy web platform" width="960" height="464" loading="lazy" decoding="async" data-parallax /></div>
+            <article class="project project--compact reveal">
+              <div class="project__media"><img src="/images/hqp.webp" alt="Screenshot of the HQP Academy web platform" width="960" height="464" loading="lazy" decoding="async" /></div>
               <div class="project__body">
                 <h3>HQP Academy</h3>
                 <p>A full stack learning platform: React frontend, Express API, Prisma ORM and SQLite.</p>
@@ -329,7 +484,7 @@
               </div>
             </article>
 
-            <article class="project reveal tilt">
+            <article class="project project--compact reveal">
               <div class="project__media project__media--art" aria-hidden="true">
                 <span class="art-glyph">▶</span>
               </div>

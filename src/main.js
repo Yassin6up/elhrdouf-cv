@@ -133,6 +133,30 @@ if (!reducedMotion) {
   setTimeout(tick, 2600);
 }
 
+/* ---------------- Project filters ---------------- */
+const filterBtns = document.querySelectorAll('.filter');
+const showcases = document.querySelectorAll('.showcase');
+filterBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const f = btn.dataset.filter;
+    filterBtns.forEach((b) => {
+      const on = b === btn;
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-pressed', String(on));
+    });
+    const shown = [];
+    showcases.forEach((card) => {
+      const match = f === 'all' || card.dataset.cat.split(' ').includes(f);
+      card.classList.toggle('is-filtered-out', !match);
+      if (match) shown.push(card);
+    });
+    if (!reducedMotion) {
+      gsap.fromTo(shown, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: 'expo.out', stagger: 0.05, overwrite: true });
+    }
+    ScrollTrigger.refresh();
+  });
+});
+
 /* ---------------- Rotating quotes ---------------- */
 const quotes = [
   ['First, solve the problem. Then, write the code.', 'John Johnson'],
@@ -284,6 +308,22 @@ function scrollAnimations() {
         },
       },
     );
+  });
+
+  // Phones float at a different speed than their browser window → depth.
+  gsap.utils.toArray('[data-phone]').forEach((phone) => {
+    gsap.fromTo(
+      phone,
+      { y: 50 },
+      {
+        y: -30,
+        ease: 'none',
+        scrollTrigger: { trigger: phone.closest('.showcase'), start: 'top bottom', end: 'bottom top', scrub: true },
+      },
+    );
+  });
+  gsap.utils.toArray('[data-phone-back]').forEach((el) => {
+    gsap.fromTo(el, { y: -30 }, { y: 40, ease: 'none', scrollTrigger: { trigger: el.closest('.showcase'), start: 'top bottom', end: 'bottom top', scrub: true } });
   });
 
   // Image parallax inside project cards.
