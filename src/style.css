@@ -740,7 +740,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 .bento__caption .mono { display: block; font-size: 13px; color: var(--green); }
 .bento__caption strong { font-size: 20px; }
-.bento__wide { grid-column: span 2; }
+.bento__wide { grid-column: 1 / -1; }
 .bento__title {
   display: flex;
   align-items: center;
@@ -759,6 +759,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .tag--b { background: rgba(139, 92, 246, 0.15); color: #b49bff; }
 .tag--c { background: rgba(52, 211, 153, 0.12); color: var(--green); }
 .tag--d { background: rgba(255, 106, 61, 0.12); color: var(--orange); }
+.tag--e { background: rgba(244, 114, 182, 0.12); color: var(--pink); }
 
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 .chips li {

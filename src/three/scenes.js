@@ -124,17 +124,17 @@ function whenNear(el, fn, margin = '400px') {
 const CODE = [
   [['k', 'const '], ['v', 'developer'], ['p', ' = {']],
   [['p', '  name: '], ['s', "'Yassine Ait Elhrdouf'"], ['p', ',']],
-  [['p', '  role: '], ['s', "'Full Stack Developer'"], ['p', ',']],
+  [['p', '  role: '], ['s', "'Full Stack & Mobile Dev'"], ['p', ',']],
   [['p', '  location: '], ['s', "'Morocco 🇲🇦'"], ['p', ',']],
-  [['p', '  stack: ['], ['s', "'React'"], ['p', ', '], ['s', "'Node'"], ['p', ', '], ['s', "'Three.js'"], ['p', '],']],
+  [['p', '  stack: ['], ['s', "'React'"], ['p', ', '], ['s', "'React Native'"], ['p', ', '], ['s', "'Node'"], ['p', '],']],
+  [['p', '  platforms: ['], ['s', "'web'"], ['p', ', '], ['s', "'iOS'"], ['p', ', '], ['s', "'Android'"], ['p', '],']],
   [['p', '};']],
   [['p', '']],
   [['k', 'async function '], ['f', 'build'], ['p', '(idea) {']],
   [['k', '  const '], ['v', 'app'], ['p', ' = '], ['k', 'await '], ['f', 'design'], ['p', '(idea);']],
   [['k', '  return '], ['f', 'ship'], ['p', '(app.'], ['f', 'optimize'], ['p', '());']],
   [['p', '}']],
-  [['p', '']],
-  [['c', '// let’s build something great ✨']],
+  [['c', '// high-quality apps, every screen ✨']],
   [['f', 'build'], ['p', '('], ['s', "'your next project'"], ['p', ');']],
 ];
 const CODE_COLORS = { k: '#f472b6', v: '#7dd3fc', p: '#d4d4e0', s: '#86efac', f: '#c4b5fd', c: '#6b6b80' };

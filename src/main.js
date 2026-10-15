@@ -109,7 +109,7 @@ musicBtn.addEventListener('click', async () => {
 });
 
 /* ---------------- Typed role ---------------- */
-const roles = ['"Full Stack Developer"', '"Frontend Engineer"', '"Three.js Creator"', '"Problem Solver"'];
+const roles = ['"Full Stack & Mobile Developer"', '"iOS & Android App Builder"', '"High-Quality Apps"', '"Three.js Creator"'];
 const typedEl = document.getElementById('typed');
 if (!reducedMotion) {
   let r = 0;
