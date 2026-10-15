@@ -1347,6 +1347,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   transform: translateY(-10px) scale(0.75);
   color: var(--cyan);
 }
+.form__status { min-height: 1.4em; font-size: 14px; }
+.form__status:empty { display: none; }
+.form__status.is-success { color: var(--green); }
+.form__status.is-error { color: #fda4af; }
+.form__status.is-error a { color: var(--text); text-decoration: underline; }
+#form-submit:disabled { opacity: 0.7; cursor: progress; }
 @media (max-width: 860px) { .contact__grid { grid-template-columns: 1fr; } }
 
 /* =========================================================

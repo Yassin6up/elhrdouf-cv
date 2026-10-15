@@ -133,6 +133,57 @@ if (!reducedMotion) {
   setTimeout(tick, 2600);
 }
 
+/* ---------------- Contact form ----------------
+   Sends through FormSubmit's AJAX endpoint so visitors stay on the page and
+   see a clear result. Without JS the form still posts normally. */
+const form = document.getElementById('contact-form');
+const statusEl = document.getElementById('form-status');
+const submitBtn = document.getElementById('form-submit');
+const submitLabel = submitBtn.querySelector('.btn__label');
+const FALLBACK = 'contactmeyassin@gmail.com';
+
+function setStatus(type, html) {
+  statusEl.className = `form__status is-${type}`;
+  statusEl.innerHTML = html;
+}
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+  const data = Object.fromEntries(new FormData(form));
+  // Honeypot filled → a bot. Pretend it worked.
+  if (data._honey) {
+    form.reset();
+    setStatus('success', 'Thanks! Your message has been sent.');
+    return;
+  }
+  delete data._next;
+  submitBtn.disabled = true;
+  submitLabel.textContent = 'Sending…';
+  setStatus('pending', '');
+  try {
+    const res = await fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(data),
+    });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok || String(json.success) !== 'true') throw new Error(json.message || `HTTP ${res.status}`);
+    form.reset();
+    setStatus('success', '✓ Thanks! Your message has been sent. I’ll get back to you soon.');
+  } catch (err) {
+    console.warn('Contact form failed:', err);
+    const mail = `mailto:${FALLBACK}?subject=${encodeURIComponent('Project inquiry')}&body=${encodeURIComponent(data.message || '')}`;
+    setStatus('error', `Sorry, the message couldn’t be sent right now. Please email me directly at <a href="${mail}">${FALLBACK}</a>.`);
+  } finally {
+    submitBtn.disabled = false;
+    submitLabel.textContent = 'Send message';
+  }
+});
+
 /* ---------------- Project filters ---------------- */
 const filterBtns = document.querySelectorAll('.filter');
 const showcases = document.querySelectorAll('.showcase');
