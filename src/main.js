@@ -13,7 +13,6 @@ if (reducedMotion) root.classList.add('reduced-motion');
 /* ---------------- Small dynamic bits ---------------- */
 document.getElementById('age').textContent = String(new Date().getFullYear() - 2005);
 document.getElementById('year').textContent = String(new Date().getFullYear());
-document.getElementById('form-next').value = `${location.origin}/thanks.html`;
 
 /* ---------------- Smooth scroll (Lenis) ---------------- */
 let lenis = null;
@@ -133,55 +132,32 @@ if (!reducedMotion) {
   setTimeout(tick, 2600);
 }
 
-/* ---------------- Contact form ----------------
-   Sends through FormSubmit's AJAX endpoint so visitors stay on the page and
-   see a clear result. Without JS the form still posts normally. */
+/* ---------------- Contact form → WhatsApp ----------------
+   Builds a pre-filled WhatsApp message from the visitor's name and message
+   and opens a chat with my number. */
+const WHATSAPP_NUMBER = '212687802700';
 const form = document.getElementById('contact-form');
 const statusEl = document.getElementById('form-status');
-const submitBtn = document.getElementById('form-submit');
-const submitLabel = submitBtn.querySelector('.btn__label');
-const FALLBACK = 'contactmeyassin@gmail.com';
 
-function setStatus(type, html) {
-  statusEl.className = `form__status is-${type}`;
-  statusEl.innerHTML = html;
-}
-
-form.addEventListener('submit', async (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   if (!form.checkValidity()) {
     form.reportValidity();
     return;
   }
-  const data = Object.fromEntries(new FormData(form));
-  // Honeypot filled → a bot. Pretend it worked.
-  if (data._honey) {
-    form.reset();
-    setStatus('success', 'Thanks! Your message has been sent.');
-    return;
-  }
-  delete data._next;
-  submitBtn.disabled = true;
-  submitLabel.textContent = 'Sending…';
-  setStatus('pending', '');
-  try {
-    const res = await fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify(data),
-    });
-    const json = await res.json().catch(() => ({}));
-    if (!res.ok || String(json.success) !== 'true') throw new Error(json.message || `HTTP ${res.status}`);
-    form.reset();
-    setStatus('success', '✓ Thanks! Your message has been sent. I’ll get back to you soon.');
-  } catch (err) {
-    console.warn('Contact form failed:', err);
-    const mail = `mailto:${FALLBACK}?subject=${encodeURIComponent('Project inquiry')}&body=${encodeURIComponent(data.message || '')}`;
-    setStatus('error', `Sorry, the message couldn’t be sent right now. Please email me directly at <a href="${mail}">${FALLBACK}</a>.`);
-  } finally {
-    submitBtn.disabled = false;
-    submitLabel.textContent = 'Send message';
-  }
+  const name = form.querySelector('#name').value.trim();
+  const message = form.querySelector('#message').value.trim();
+  const text =
+    `Hello, my name is ${name}. I am interested in your services and I want to work with you.\n\n` + message;
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+
+  // Opened synchronously inside the submit handler, so popup blockers allow it.
+  // ('noopener' as a feature would make window.open return null, so detach manually.)
+  const win = window.open(url, '_blank');
+  if (win) win.opener = null;
+  else window.location.href = url; // popup blocked → open in this tab instead
+  statusEl.className = 'form__status is-success';
+  statusEl.innerHTML = `Opening WhatsApp… If nothing happened, <a href="${url}" target="_blank" rel="noopener">tap here</a>.`;
 });
 
 /* ---------------- Project filters ---------------- */

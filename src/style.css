@@ -1347,6 +1347,22 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   transform: translateY(-10px) scale(0.75);
   color: var(--cyan);
 }
+.form__intro {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.form__intro svg { flex: none; color: #25d366; }
+.form__intro strong { color: var(--text); }
+.btn--whatsapp {
+  color: #fff;
+  background: linear-gradient(100deg, #128c7e, #25d366);
+  box-shadow: 0 10px 30px -10px rgba(37, 211, 102, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.btn--whatsapp:hover { box-shadow: 0 16px 40px -10px rgba(37, 211, 102, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.3); }
+.form__status a { color: var(--text); text-decoration: underline; }
 .form__status { min-height: 1.4em; font-size: 14px; }
 .form__status:empty { display: none; }
 .form__status.is-success { color: var(--green); }
